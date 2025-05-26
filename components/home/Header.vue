@@ -12,7 +12,7 @@
           <img 
             src="https://scsl.scsl.ltd/global/images/scsl308.webp" 
             alt="Company Logo"
-            class="h-8 md:h-12 transition-all duration-300"
+            class="h-8 md:h-14 transition-all duration-300"
           >
         </nuxt-link>
         
