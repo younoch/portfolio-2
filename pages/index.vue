@@ -130,7 +130,7 @@ useHead({
 <style lang="scss">
 .curved-top-bg {
   background: white;
-  border-top-left-radius: 100% 20vw;
-  border-top-right-radius: 100% 20vw;
+  border-top-left-radius: 100% 30vw;
+  border-top-right-radius: 100% 30vw;
 }
 </style>
