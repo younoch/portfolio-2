@@ -11,7 +11,8 @@
       >
         <Header />
         <slot />
-        <Footer />
+        <!-- <Footer /> -->
+         
       </div>
     </div>
     <div class="inline-block border-0 box-border"></div>
