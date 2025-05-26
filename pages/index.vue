@@ -102,13 +102,134 @@
       </div>
     </section>
     <section style="text-align:center;position:relative;box-sizing:border-box;display:block;">
-    <div style="width: 1320px !important;min-height:201px;pointer-events:none;position:relative;margin: 0px auto;box-sizing:border-box;">
-        <blockquote style="text-align:justify;font-style:normal;margin:0px 84px 60px;border-color:rgb(71, 138, 201);font-size:18px;padding-left:20px;border-width:0px 0px 0px 4px;margin-top:0px;margin-bottom:60px;line-height:28.8px;color:rgb(0, 0, 0);padding:10px 20px;border-left-width:4px;border-style:solid;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;font-family:'Roboto Condensed', sans-serif;overflow-wrap:break-word;position:relative;pointer-events:auto;box-sizing:border-box;"> At SCSL, we specialize in delivering integrated technology solutions that drive efficiency, innovation, and growth. With a proven track record across diverse industries, our expertise spans IT staff augmentation, SAP ERP consulting, and CAD design services. Whether you're looking to scale your development team, optimize your enterprise operations, or enhance your engineering workflows, we provide the skills, tools, and strategies to help you succeed in a competitive digital landscape.</blockquote>
-    </div>
-</section>
-    <div>
+      <div
+        style="width: 1320px !important;min-height:201px;pointer-events:none;position:relative;margin: 0px auto;box-sizing:border-box;">
+        <blockquote
+          style="text-align:justify;font-style:normal;margin:0px 84px 60px;border-color:rgb(71, 138, 201);font-size:18px;padding-left:20px;border-width:0px 0px 0px 4px;margin-top:0px;margin-bottom:60px;line-height:28.8px;color:rgb(0, 0, 0);padding:10px 20px;border-left-width:4px;border-style:solid;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;font-family:'Roboto Condensed', sans-serif;overflow-wrap:break-word;position:relative;pointer-events:auto;box-sizing:border-box;">
+          At SCSL, we specialize in delivering integrated technology solutions that drive efficiency, innovation, and
+          growth. With a proven track record across diverse industries, our expertise spans IT staff augmentation, SAP
+          ERP consulting, and CAD design services. Whether you're looking to scale your development team, optimize your
+          enterprise operations, or enhance your engineering workflows, we provide the skills, tools, and strategies to
+          help you succeed in a competitive digital landscape.</blockquote>
+      </div>
+    </section>
+      <section class="min-h-[714px] flex flex-col justify-center bg-none text-[#111] bg-[#f2f2f2] relative box-border">
+        <div data-image-width="1980" data-image-height="1033"
+          class="bg-[position:50%_50%] mb-5 h-auto min-h-[694px] mt-0 text-[#111] bg-[#f2f2f2] text-left relative flex mx-0 w-full !important box-border">
+          <div class="p-0 relative flex-1 max-w-full transition-[duration:0s] box-border">
+            <!-- Heading -->
+            <h1
+              class="font-bold text-[48px] w-[276px] mx-auto mt-[44px] mb-0 leading-[52.8px] font-roboto break-words relative text-center text-[#111] p-0 box-border">
+              Our Services
+            </h1>
 
-    </div>
+            <!-- Services Grid -->
+            <div class="w-[986px] mx-auto mt-[35px] relative box-border">
+              <div class="m-[-15px] box-border">
+                <div class="flex flex-row flex-wrap min-h-fit max-w-full box-border">
+
+                  <!-- Service Card 1 -->
+                  <div
+                    class="max-h-full min-h-fit flex flex-[0_0_33.3333%] max-w-[33.3333%] min-w-[33.3333%] box-border">
+                    <div class="flex flex-col min-h-fit box-border">
+                      <div
+                        class="min-h-[536px] text-[#111] bg-white rounded-[50px] text-center relative flex bg-clip-padding bg-origin-padding max-w-full border-[14.6667px] border-solid border-transparent flex-[60_0_auto] box-border">
+                        <div
+                          class="px-[8px] py-0 rounded-[50px] relative flex-1 max-w-full transition-[duration:0s] box-border">
+                          <span
+                            class="h-[121px] w-[163px] mx-auto mt-[35px] ml-[59px] p-0 text-[#478ac9] text-center block leading-[0px] border-0 relative box-border">
+                            <img src="https://scsl.scsl.ltd/global/images/1.png" alt=""
+                              class="object-contain block w-full h-[121px] box-border border-none" />
+                          </span>
+                          <h4
+                            class="mx-[12px] mt-[14px] mb-0 font-normal text-[24px] leading-[28.8px] font-roboto break-words relative text-[#111] p-0 box-border">
+                            <b class="box-border font-bold">SAP Services</b>
+                          </h4>
+                          <p
+                            class="text-[16px] font-normal mx-[12px] mt-[44px] mb-0 leading-[25.6px] font-roboto break-words relative p-0 box-border">
+                            Expert SAP advisory, implementation, migration, custom development, and Application
+                            maintenance
+                            service ensure seamless integration, boosting your business
+                            efficiency&nbsp;and&nbsp;success.
+                          </p>
+                          <a href=""
+                            class="rounded-[50px] font-bold uppercase text-[14px] tracking-[1px] mt-[41px] mx-auto mb-0 bg-[#adf6f2] text-[#111] leading-[19.6px] border-0 relative no-underline table cursor-pointer font-['Open_Sans'] py-[10px] px-[30px] self-start transition-[background-color,color,border-color]">
+                            Read More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Service Card 2 -->
+                  <div
+                    class="max-h-full min-h-fit flex flex-[0_0_33.3333%] max-w-[33.3333%] min-w-[33.3333%] box-border">
+                    <div class="flex flex-col min-h-fit box-border">
+                      <div
+                        class="min-h-[536px] text-[#111] bg-white rounded-[50px] text-center relative flex bg-clip-padding bg-origin-padding max-w-full border-[14.6667px] border-solid border-transparent flex-[60_0_auto] box-border">
+                        <div
+                          class="px-0 py-[30px] rounded-[50px] justify-start flex flex-col relative flex-1 max-w-full transition-[duration:0s] box-border">
+                          <span
+                            class="h-[130px] w-[175px] mx-auto text-black text-center block leading-[0px] border-0 relative flex-shrink-0 box-border">
+                            <img src="https://scsl.scsl.ltd/global/images/21-83c79cbd.png" alt=""
+                              class="object-contain block w-full h-[130px] box-border border-none" />
+                          </span>
+                          <h4
+                            class="mx-[21px] mt-[9px] mb-0 font-normal text-[24px] leading-[28.8px] font-roboto break-words relative text-[#111] p-0 flex-shrink-0 box-border">
+                            <b class="box-border font-bold">IT Staff Augmentation&nbsp;</b>
+                          </h4>
+                          <p
+                            class="font-normal text-[16px] mx-[20px] mt-[44px] mb-0 leading-[25.6px] font-roboto break-words relative p-0 flex-shrink-0 box-border">
+                            Access skilled IT professionals on demand through our IT staff augmentation service. Whether
+                            for
+                            projects and continuous support, we help business to scale up their team with the
+                            skills&nbsp;they&nbsp;need.
+                          </p>
+                          <a href=""
+                            class="rounded-[50px] uppercase text-[14px] tracking-[1px] font-bold mt-[41px] mx-auto mb-0 bg-[#adf6f2] text-[#111] leading-[19.6px] border-0 relative flex-shrink-0 no-underline table cursor-pointer font-roboto py-[10px] px-[30px] self-start transition-[background-color,color,border-color]">
+                            Read More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Service Card 3 -->
+                  <div
+                    class="max-h-full min-h-fit flex flex-[0_0_33.3333%] max-w-[33.3333%] min-w-[33.3333%] box-border">
+                    <div class="flex flex-col min-h-fit box-border">
+                      <div
+                        class="min-h-[582px] text-[#111] bg-white rounded-[50px] text-center relative flex bg-clip-padding bg-origin-padding max-w-full border-[14.6667px] border-solid border-transparent flex-[60_0_auto] box-border">
+                        <div
+                          class="px-[11px] py-[30px] rounded-[50px] relative flex-1 max-w-full transition-[duration:0s] box-border">
+                          <span
+                            class="h-[88px] w-[88px] mx-auto mt-[22px] p-0 text-[#2a2a2a] text-center block leading-[0px] border-0 relative box-border">
+                            <img src="https://scsl.scsl.ltd/global/images/4289960-02f4311f.png" alt=""
+                              class="object-contain block w-full h-[88px] box-border border-none" />
+                          </span>
+                          <h4
+                            class="font-bold mx-[9px] mt-[30px] mb-0 text-[24px] leading-[28.8px] font-roboto break-words relative text-[#111] p-0 box-border">
+                            Other<span class="font-bold box-border"></span>s Services
+                          </h4>
+                          <p
+                            class="font-normal text-[16px] mx-[9px] mt-[43px] mb-0 leading-[25.6px] font-roboto break-words relative p-0 box-border">
+                            Our Other Services are Development Services, Managed services, AI &amp; ML, Cyber Security,
+                            Training, Cloud Services, CAD Services, GIS Services
+                          </p>
+                          <a href=""
+                            class="rounded-[50px] font-bold uppercase text-[14px] tracking-[1px] mt-[93px] mx-auto mb-0 bg-[#adf6f2] text-[#111] leading-[19.6px] border-0 relative no-underline table cursor-pointer font-['Open_Sans'] py-[10px] px-[30px] self-start transition-[background-color,color,border-color]">
+                            Read MOre
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   </main>
 </template>
 <script setup lang="ts">
