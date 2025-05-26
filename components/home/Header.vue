@@ -47,7 +47,7 @@
                   <li v-for="(child, childIndex) in item.children" :key="childIndex" class="px-4 py-2 hover:bg-gray-50">
                     <nuxt-link
                       :to="child.path"
-                      class="block text-gray-800 hover:text-sky-800 transition-colors"
+                      class="block text-gray-800 hover:text-sky-800 transition-colors font-bold"
                     >
                       {{ child.name }}
                     </nuxt-link>
