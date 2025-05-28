@@ -45,12 +45,12 @@
                 <!-- Dropdown -->
                 <ul
                   class="absolute right-0 top-full mt-0 w-40 bg-cyan-400 rounded-lg shadow-lg pt-1.5 z-50 opacity-0 invisible transform -translate-y-5 scale-y-95
-                        group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:scale-y-100 transition-all duration-700 ease-[cubic-bezier(0.25, 0.8, 0.25, 1)] origin-top overflow-hidden"
+                        group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:scale-y-100 transition-all duration-700 ease-[cubic-bezier(0.25, 0.8, 0.25, 1)] origin-top overflow-hidden border border-solid border-cyan-500"
                 >
                   <li
                     v-for="(child, childIndex) in item.children"
                     :key="childIndex"
-                    class="px-2 py-1 hover:bg-cyan-500 bg-white hover:text-white rounded-sm"
+                    class="px-2 py-1 hover:bg-cyan-400 bg-white hover:text-white rounded-sm"
                   >
                     <nuxt-link :to="child.path" class="block w-full no-underline">
                       {{ child.name }}

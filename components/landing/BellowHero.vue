@@ -3,7 +3,7 @@
     <div
       class="pointer-events-none relative mx-auto   w-full px-4 sm:px-6 lg:px-0">
       <blockquote
-        class="text-justify font-normal m-0 mb-5 sm:mb-8 text-lg text-black pl-5 border-l-4 border-[#478ac9] break-words relative pointer-events-auto">
+        class="text-justify font-normal m-0 mb-5 sm:mb-8 text-sm sm:text-lg text-black pl-3 sm:pl-5 border-l-4 border-[#478ac9] break-words relative pointer-events-auto">
         At SCSL, we specialize in delivering integrated technology solutions that drive efficiency, innovation, and
         growth. With a proven track record across diverse industries, our expertise spans IT staff augmentation, SAP
         ERP consulting, and CAD design services. Whether you're looking to scale your development team, optimize your
