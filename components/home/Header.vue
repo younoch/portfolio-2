@@ -1,54 +1,58 @@
 <template>
   <header
-    class="transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] py-4 w-full z-50 top-0 fixed border-0 border-solid border-[rgb(229,231,235)] box-border"
-    :class="{'bg-white shadow-md': scrolled, 'bg-transparent': !scrolled}"
+    class="pt-3 pb-1 w-full z-50 top-0 fixed border-0 border-solid border-[rgb(229,231,235)]  "
+    :class="{ 'bg-white': scrolled, 'bg-transparent': !scrolled }"
   >
-    <div class="max-w-6xl mx-auto w-full border-0 border-solid border-[rgb(229,231,235)] box-border">
-      <nav class="px-1 flex justify-between items-center border-0 border-solid border-[rgb(229,231,235)] box-border">
-        <nuxt-link
-          to="/"
-          class="text-sky-800 font-bold text-lg md:text-2xl leading-8 relative no-underline border-0 border-solid border-[rgb(229,231,235)] box-border"
-        >
-          <img 
-            src="https://scsl.scsl.ltd/global/images/scsl308.webp" 
-            alt="Company Logo"
-            class="h-8 md:h-14 transition-all duration-300"
-          >
+    <div class="max-w-6xl mx-auto w-full  ">
+      <nav class="px-1 flex justify-between items-center  ">
+        <!-- Logo -->
+        <nuxt-link to="/" class="text-cyan-800 font-bold text-lg md:text-2xl leading-8 relative no-underline   justify-self-center">
+          <img src="https://scsl.scsl.ltd/global/images/scsl308.webp" alt="Company Logo" class="h-8 md:h-12" />
         </nuxt-link>
-        
+
         <!-- Desktop Navigation -->
-        <ul class="hidden md:flex gap-8 list-none m-0 p-0 border-0 border-solid border-[rgb(229,231,235)] box-border">
+        <ul class="hidden md:flex gap-8 list-none m-0 p-0  ">
           <li
             v-for="(item, index) in routesHeader"
-            class="border-0 border-solid border-[rgb(229,231,235)] box-border relative group flex justify-center items-center"
             :key="index"
+            class="relative flex justify-center items-center group "
           >
             <template v-if="!item.children">
               <nuxt-link
                 :to="item.path"
-                class="relative transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] uppercase font-bold py-2 no-underline border-0 border-solid border-[rgb(229,231,235)] box-border text-lg"
-                :class="currentRoute === item.path ? 'text-sky-600' : 'text-gray-600'"
+                class="relative uppercase font-bold py-2 no-underline"
+                :class="currentRoute === item.path ? 'text-cyan-400' : 'text-gray-400'"
               >
                 {{ item.name }}
               </nuxt-link>
             </template>
+
             <template v-else>
               <div class="relative">
-                <button
-                  class="relative transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] uppercase font-bold py-2 no-underline border-0 border-solid border-[rgb(229,231,235)] box-border text-lg flex items-center gap-1"
-                  :class="currentRoute === item.path ? 'text-sky-600' : 'text-gray-600'"
+                <!-- Toggle Label -->
+                <div
+                  class="cursor-pointer relative uppercase font-bold py-2 no-underline flex items-center text-gray-400 group-hover:text-cyan-600"
                 >
                   {{ item.name }}
-                  <span class="i-uil:angle-down text-base transition-transform duration-200 group-hover:rotate-180"></span>
-                </button>
-                <ul
-                  class="absolute left-0 top-full mt-0 w-56 bg-white rounded-md shadow-lg py-2 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 origin-top"
+                  <UIcon class="size-6" name="i-mdi:chevron-down" />
+                </div>
+                <div
+                  class="w-full absolute z-10 -bottom-4 flex justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
                 >
-                  <li v-for="(child, childIndex) in item.children" :key="childIndex" class="px-4 py-2 hover:bg-gray-50">
-                    <nuxt-link
-                      :to="child.path"
-                      class="block text-gray-800 hover:text-sky-800 transition-colors font-bold"
-                    >
+                  <UIcon class="size-10 bg-cyan-400" name="i-mdi:triangle-small-up" />
+                </div>
+
+                <!-- Dropdown -->
+                <ul
+                  class="absolute right-0 top-full mt-0 w-40 bg-cyan-400 rounded-lg shadow-lg pt-1.5 z-50 opacity-0 invisible transform -translate-y-5 scale-y-95
+                        group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:scale-y-100 transition-all duration-700 ease-[cubic-bezier(0.25, 0.8, 0.25, 1)] origin-top overflow-hidden"
+                >
+                  <li
+                    v-for="(child, childIndex) in item.children"
+                    :key="childIndex"
+                    class="px-2 py-1 hover:bg-cyan-500 bg-white hover:text-white rounded-sm"
+                  >
+                    <nuxt-link :to="child.path" class="block w-full no-underline">
                       {{ child.name }}
                     </nuxt-link>
                   </li>
@@ -57,101 +61,107 @@
             </template>
           </li>
         </ul>
-        
+
         <!-- Mobile Menu Button -->
-        <button
-          class="md:hidden text-gray-800 text-2xl"
-          @click="toggleMenuHandler"
-        >
-          <span :class="iconClass"></span>
-        </button>
+        <div class="md:hidden flex items-center">
+          <button @click="mobileOpen = !mobileOpen" class="text-cyan-700">
+            <UIcon :name="mobileOpen ? 'i-mdi:close' : 'i-mdi:menu'" class="w-8 h-8" />
+          </button>
+        </div>
       </nav>
-      
-      <!-- Mobile Navigation -->
-      <nav v-if="toggleMenu" class="md:hidden mt-4 pb-2">
-        <div class="flex flex-col">
-          <template v-for="(item, index) in routesHeader" :key="index">
+
+      <!-- Mobile Dropdown -->
+      <transition name="fade">
+        <div
+          v-if="mobileOpen"
+          class="md:hidden mt-3 px-4 bg-white shadow-lg rounded-lg py-4 space-y-2 transition-all duration-300"
+        >
+          <div v-for="(item, index) in routesHeader" :key="index">
             <template v-if="!item.children">
               <nuxt-link
-                class="py-2 px-4 rounded-md transition-colors text-center font-medium"
                 :to="item.path"
-                :class="currentRoute === item.path ? 'text-sky-800 bg-gray-200' : 'text-gray-800'"
+                class="block py-2 text-gray-700 font-semibold no-underline"
+                @click="mobileOpen = false"
               >
                 {{ item.name }}
               </nuxt-link>
             </template>
+
             <template v-else>
-              <button
-                class="py-2 px-4 rounded-md transition-colors text-center font-medium flex items-center justify-center gap-1"
-                :class="currentRoute === item.path ? 'text-sky-800 bg-gray-200' : 'text-gray-800'"
-                @click="toggleServicesMenu"
-              >
-                {{ item.name }}
-                <span class="i-uil:angle-down text-base transition-transform duration-200" :class="{'rotate-180': showServicesMenu}"></span>
-              </button>
-              <div v-if="showServicesMenu" class="pl-4">
-                <nuxt-link
-                  v-for="(child, childIndex) in item.children"
-                  :key="childIndex"
-                  :to="child.path"
-                  class="block py-2 px-4 rounded-md transition-colors text-center font-medium text-gray-800 hover:bg-gray-100"
+              <div>
+                <button
+                  @click="toggleSubMenu(index)"
+                  class="w-full text-left py-2 font-semibold text-gray-700 flex justify-between items-center"
                 >
-                  {{ child.name }}
-                </nuxt-link>
+                  {{ item.name }}
+                  <UIcon :name="openSubMenu === index ? 'i-mdi:chevron-up' : 'i-mdi:chevron-down'" class="w-5 h-5" />
+                </button>
+                <div v-if="openSubMenu === index" class="pl-4">
+                  <nuxt-link
+                    v-for="(child, childIndex) in item.children"
+                    :key="childIndex"
+                    :to="child.path"
+                    class="block py-1 text-gray-600 no-underline"
+                    @click="mobileOpen = false"
+                  >
+                    {{ child.name }}
+                  </nuxt-link>
+                </div>
               </div>
             </template>
-          </template>
+          </div>
         </div>
-      </nav>
+      </transition>
     </div>
   </header>
 </template>
 
-<script setup lang="ts">
-const routesHeader = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { 
-    name: "Services",
-    children: [
-      { name: "Sav Services", path: "/sav-services" },
-      { name: "IT Staff Augmentation", path: "/it-staff" },
-      { name: "Other Services", path: "/other-services" },
-    ]
-  },
-  { name: "Contact Us", path: "/contact" },
-];
+<script setup>
+import { useRoute } from 'vue-router'
+import { ref, onMounted } from 'vue'
+import { UIcon } from '#components'
 
-const route = useRoute();
-const toggleMenu = ref(false);
-const showServicesMenu = ref(false);
-
-const toggleMenuHandler = () => {
-  toggleMenu.value = !toggleMenu.value;
-  if (!toggleMenu.value) {
-    showServicesMenu.value = false;
-  }
-};
-
-const toggleServicesMenu = () => {
-  showServicesMenu.value = !showServicesMenu.value;
-};
-
-const currentRoute = computed(() => {
-  return route.path;
-});
-const iconClass = computed(() => (toggleMenu.value ? 'i-uil:times' : 'i-uil:apps'));
-
-const scrolled = ref(false);
-const handleScroll = () => {
-  scrolled.value = window.scrollY > 10;
-};
+const route = useRoute()
+const currentRoute = ref(route.path)
+const scrolled = ref(false)
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-});
+  window.addEventListener('scroll', () => {
+    scrolled.value = window.scrollY > 10
+  })
+})
 
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
-</script> 
+// Sample navigation structure
+const routesHeader = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  {
+    name: 'Services',
+    path: '/services',
+    children: [
+      { name: 'Design', path: '/services/design' },
+      { name: 'Development', path: '/services/development' },
+    ],
+  },
+  { name: 'Contact', path: '/contact' },
+]
+
+const mobileOpen = ref(false)
+const openSubMenu = ref(null)
+
+const toggleSubMenu = (index) => {
+  openSubMenu.value = openSubMenu.value === index ? null : index
+}
+</script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+</style>

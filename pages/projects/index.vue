@@ -42,7 +42,7 @@ const filterProjectsByTech = computed(() => {
           @click="selectedTech = item"
       />
       </div>
-      <main class="flex-grow border-0 box-border mt-4">
+      <main class="flex-grow border-0   mt-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           <div v-for="(project, index) in filterProjectsByTech" :key="index"
             class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
