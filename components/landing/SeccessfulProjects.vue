@@ -3,15 +3,15 @@
     <div
       class="pointer-events-none relative mx-auto grid grid-cols-3"
     >
-      <div class=" flex flex-col justify-center col-span-3 sm:col-span-1">
+      <div class="flex flex-col justify-center col-span-3 sm:col-span-1">
         <h2
-          class="text-left text-4xl font-bold mb-0  text-[#111] p-0 pointer-events-auto"
+          class="text-center sm:text-left text-3xl sm:text-4xl font-bold mb-0  text-[#111] p-0 pointer-events-auto"
         >
           Over 270+ Successful Projects I​n Different Countries&nbsp;&nbsp;
         </h2>
         <a
           href="#"
-          class="mt-[43px] ml-0 font-bold uppercase text-[14px] tracking-[1px] bg-none py-[19px] px-[30px] pb-[21px] bg-[#adf6f2] text-[#111] mb-[60px] leading-[19.6px] border-0 border-transparent rounded-[50px] border-solid no-underline relative box-border transition-[background-color,color,border-color] table cursor-pointer font-['Open_Sans',sans-serif] border-0 outline-0 not-italic whitespace-nowrap select-none align-middle text-center self-start"
+          class="text-center mt-6 ms:mt-11 ml-0 font-bold uppercase text-base sm:text-lg tracking-[1px] bg-none py-3 sm:py-5 px-4 sm:px-7 pb3 sm:pb-5 bg-[#adf6f2] text-[#111] mb-10 sm:mb-14 border-0 border-transparent rounded-full border-solid no-underline relative box-border transition-[background-color,color,border-color] table select-none align-middle self-center sm:self-start"
         >
           MOre Case Studies
         </a>
@@ -28,21 +28,24 @@
             >
             <div>
 
-              <div class="will-change-transform will-change-opacity p-4 text-white bg-[#333] rounded-full text-center relative flex "
+              <div class="will-change-transform will-change-opacity p-3 sm:p-4 text-white bg-[#333] rounded-full text-center relative flex "
               >
                 <div
-                  class="rounded-full flex flex-col justify-center relative flex-1 max-w-full transition-[duration:0s] box-border"
+                  class="rounded-full flex flex-col justify-center relative flex-1 max-w-full transition-[duration:0s]"
                 >
+                <div>
+
                   <h5
-                    class="text-[36px] font-bold mx-auto leading-[43.2px] my-0 font-[Ubuntu,sans-serif] break-words relative text-white p-0 flex-shrink-0 table self-start w-fit box-border"
+                    class="text-2xl sm:text-3xl font-bold mx-auto my-0 font-[Ubuntu,sans-serif] break-words relative text-white p-0 flex-shrink-0 table self-start w-fit box-border"
                   >
                     {{ `0${ 1 + index}` }}
                   </h5>
                 </div>
+                </div>
               </div>
             </div>
               <p
-                class="text-lg my-0 break-words relative p-0 box-border"
+                class="text-base sm:text-lg my-0 break-words relative p-0 box-border"
               >
                 <b class="box-border font-bold"
                   >{{ item.title }}</b

@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gradient-to-b from-white to-[#01080c] text-[#111] text-left relative box-border block bg-[position:50%_50%] bg-no-repeat bg-cover">
     <div class=" flex justify-center flex-col  pointer-events-none relative max-w-6xl mx-auto ">
-      <h2 class="mt-[2px] font-bold text-[48px] leading-[52.8px] mb-0 font-['Roboto_Condensed',sans-serif] break-words relative text-[#111] p-0 pointer-events-auto table self-start w-fit box-border">
+      <h2 class="mt-[2px] text-center sm:text-left font-bold text-4xl sm:text-5xl  mb-0  text-[#111] p-0 pointer-events-auto table self-start w-fit">
         What Makes Us Unique
       </h2>
       
@@ -13,7 +13,7 @@
             :key="index"
             class="bg-none rounded-[10px] text-[#111] bg-white flex relative text-left col-span-2 sm:col-span-1"
           >
-            <div class="p-[21px_30px] rounded-[10px] relative flex-1 max-w-full transition-[duration-0s] box-border">
+            <div class="py-3 px-4 sm:py-5 sm:px-7 rounded-[10px] relative flex-1 max-w-full transition-[duration-0s] box-border">
               <span class="h-[64px] w-[64px] bg-none my-0 ml-0 p-[18px] text-white bg-[#adf6f2] rounded-full block leading-[0px] border-0 relative box-border">
                 <img 
                   src="https://scsl.scsl.ltd/global/images/1828743-ed89434a.png" 

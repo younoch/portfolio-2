@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[position:50%_50%] h-fit bg-no-repeat bg-cover relative   block bg-red-600 ">
+  <section class="bg-[position:50%_50%] h-fit bg-no-repeat bg-cover relative   block  ">
     <div class="overflow-hidden left-0 top-0 w-full h-full min-h-screen absolute  ">
       <div class="pointer-events-none w-full h-full relative block p-0 overflow-hidden  ">
         <video data-autoplay="1" loop muted autoplay playsinline
