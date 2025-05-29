@@ -13,12 +13,12 @@
             :key="index"
             class="bg-none rounded-[10px] text-[#111] bg-white flex relative text-left col-span-2 sm:col-span-1"
           >
-            <div class="py-3 px-4 sm:py-5 sm:px-7 rounded-[10px] relative flex-1 max-w-full transition-[duration-0s] box-border">
-              <span class="h-[64px] w-[64px] bg-none my-0 ml-0 p-[18px] text-white bg-[#adf6f2] rounded-full block leading-[0px] border-0 relative box-border">
+            <div class="py-3 px-4 sm:py-5 sm:px-7 rounded-[10px] relative flex-1 max-w-full flex justify-center items-center">
+              <span class="h-12 w-12 md:h-16 md:w-16 bg-none my-0 ml-0 text-white bg-[#adf6f2] rounded-full block leading-[0px] border-0 relative box-border">
                 <img 
                   src="/images/1828743-ed89434a.png" 
                   alt="" 
-                  class="object-contain block w-full h-[28px] box-border border-none" 
+                  class="object-contain block w-full h-4 md:h-7 box-border border-none" 
                 />
               </span>
               

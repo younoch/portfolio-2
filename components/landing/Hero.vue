@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-[position:50%_50%] h-fit bg-no-repeat bg-cover relative   block  ">
+  <section class="bg-[position:50%_50%] h-fit bg-no-repeat bg-cover relative block  ">
     <div class="overflow-hidden left-0 top-0 w-full h-full min-h-screen absolute  ">
       <div class="pointer-events-none w-full h-full relative block p-0 overflow-hidden  ">
         <video data-autoplay="1" loop muted autoplay playsinline
-          class="object-cover absolute top-0 left-0 bottom-0 h-full w-full border-0 border-none border-[#111]   block">
+          class="object-cover absolute top-0 left-0 bottom-0 h-full w-full border-0 border-none border-[#111] block">
           <source src="https://scsl.scsl.ltd/global/files/scsl_banner_vid.mp4" type="video/mp4" class=" " />
           <p class="text-lg mt-5 mb-5 p-0  ">Your browser does not support HTML5 video.</p>
         </video>
@@ -13,9 +13,9 @@
     <div class="pointer-events-none relative   px-2 sm:px-0">
       <div class="mb-0 pointer-events-auto w-full !important relative   max-w-6xl mx-auto">
         <div class=" ">
-          <div class="grid grid-cols-3 gap-2 items-center   pt-16 sm:pt-20">
+          <div class="grid grid-cols-4 gap-2 items-center   pt-16 sm:pt-20">
 
-            <div class="col-span-3 sm:col-span-2 relative flex bg-clip-padding bg-origin-padding">
+            <div class="col-span-4 sm:col-span-3 relative flex bg-clip-padding bg-origin-padding">
 
               <div class="px-0 relative flex-1 max-w-full  ">
 
@@ -32,14 +32,14 @@
                 </p>
                 <div class="flex justify-center sm:justify-start">
                   <a
-                    class="border-solid uppercase rounded-3xl text-sm sm:text-lg font-bold mt-[21px] mb-0 px-6 py-2 bg-[#adf6f2] text-black font-roboto no-underline relative table cursor-pointer outline-0 whitespace-nowrap self-start   border-2 transition-[background-color,color,border-color]">
+                    class="border-solid uppercase rounded-3xl text-sm sm:text-lg font-bold mt-4 md:mt-5 md:mb-0 mb-3 px-6 py-2 bg-[#adf6f2] text-black font-roboto no-underline relative table cursor-pointer outline-0 whitespace-nowrap self-start   border-2 transition-[background-color,color,border-color]">
                     Get IN Touch
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-span-3 sm:col-span-1 text-left relative flex bg-clip-padding bg-origin-padding">
-              <div class="rounded-lg sm:rounded-3xl text-center bg-white pt-4 pb-3 px-3 w-full">
+            <div class="col-span-4 sm:col-span-1 text-left relative flex bg-clip-padding bg-origin-padding">
+              <div class="rounded-lg sm:rounded-3xl text-center bg-white pt-4 pb-3 px-2 sm:px-4 w-full">
                 <h4
                   class="text-lg sm:text-[20px] font-bold mb-0 font-roboto break-words relative text-[#111] p-0 table self-start mx-auto  ">
                   Let's Connect To Help You And Your Team
@@ -99,13 +99,13 @@
         </div>
       </div>
     </div>
-    <div class="pb-40 sm:pb-56"></div>
-    <div class="absolute bottom-0 -left-3 -right-3 sm:-left-10 sm:-right-10 h-32 sm:h-48 z-10">
+    <div class="pb-36 sm:pb-56"></div>
+    <div class="absolute bottom-0 -left-3 -right-3 sm:-left-10 sm:-right-10 h-28 sm:h-48 z-10">
       <div class=" h-full relative">
         <div class="h-full curved-top-bg ">
         </div>
-        <div class="absolute left-0 right-0 bottom-1/3 z-20 mx-3 sm:mx-10">
-          <h2 class="sm:text-4xl font-bold text-black font-roboto text-center">
+        <div class="absolute left-0 right-0 bottom-1/4 md:bottom-1/3 z-20 mx-3 sm:mx-10">
+          <h2 class="sm:text-4xl font-bold text-black font-roboto text-center mb-0">
             Comprehensive Technology Solutions for Business In Dallas
           </h2>
         </div>

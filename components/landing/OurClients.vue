@@ -5,11 +5,11 @@
         Some Of Our Clients
       </h2>
       
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6">
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 gap-2 sm:gap-4 md:gap-6">
         <div 
           v-for="(client, index) in clients" 
           :key="index"
-          class="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+          class="flex items-center justify-center p-2 md:4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
         >
           <img 
             :alt="'Client logo ' + (index + 1)" 

@@ -20,10 +20,8 @@
                 :key="index"
                 class="col-span-3 sm:col-span-1"
               >
-                <div
-                  class="text-[#111] bg-white rounded-3xl text-center relative flex bg-clip-padding bg-origin-padding max-w-full border-solid border-transparent"
-                >
-                  <div class="rounded-3xl relative flex-1 max-w-full">
+                <div class="text-[#111] bg-white rounded-3xl text-center relative flex bg-clip-padding bg-origin-padding max-w-full border-solid border-transparent h-full py-3 sm:py-5">
+                  <div class="rounded-3xl relative flex-1 max-w-full flex flex-col">
                     <span
                       class="mx-auto block text-[#478ac9] text-center relative"
                     >
@@ -39,7 +37,7 @@
                       <b class="font-bold">{{ service.title }}</b>
                     </h4>
                     <p
-                      class="text-base font-normal mx-3 mt-5 sm:mt-8 mb-0 font-roboto break-words relative p-0"
+                      class="text-base font-normal mx-3 mt-5 sm:mt-8 mb-0 font-roboto break-words relative p-0 flex-1"
                     >
                       {{ service.description }}
                     </p>

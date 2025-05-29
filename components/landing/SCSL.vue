@@ -4,7 +4,7 @@
   >
     <div class="w-full pointer-events-none relative mx-auto">
       <h2
-        class="mt-8 md:mt-16 mx-auto mb-0 font-bold text-3xl md:text-4xl font-roboto break-words relative text-center text-[#111] p-0 pointer-events-auto table self-start w-fit"
+        class="mt-4 md:mt-12 mx-auto mb-0 font-bold text-3xl md:text-4xl font-roboto break-words relative text-center text-[#111] p-0 pointer-events-auto table self-start w-fit"
       >
         We Are SCSL
       </h2>

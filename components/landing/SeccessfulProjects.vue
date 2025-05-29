@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center max-w-6xl mx-auto">
+  <section class="text-center max-w-6xl mx-auto mt-4 sm:mt-8">
     <div
       class="pointer-events-none relative mx-auto grid grid-cols-3"
     >
