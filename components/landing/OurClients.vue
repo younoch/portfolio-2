@@ -13,7 +13,7 @@
         >
           <img 
             :alt="'Client logo ' + (index + 1)" 
-            :src="'https://scsl.scsl.ltd/global/images/' + client.image" 
+            :src="'/images/' + client.image" 
             class="w-full h-16 object-contain"
             loading="lazy"
           />

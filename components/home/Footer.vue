@@ -1,90 +1,116 @@
 <template>
-  <footer class="bg-white border-t border-gray-200 mt-auto">
-  <div class="max-w-5xl mx-auto py-2 sm:py-4 w-full">
-    <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-      <div class="text-center sm:text-left">
-        <nuxt-link to="/" class="text-gray-900 font-bold text-xl sm:text-2xl leading-8 no-underline">Portfolio</nuxt-link>
-        <p class="text-gray-500 text-sm leading-5 mt-2">
-          © 2025 Mohammad Younoch. All rights reserved.
-        </p>
+  <footer class="relative overflow-hidden flex justify-center">
+    <div
+      class="w-full grid md:grid-cols-[140px_1fr] md:pt-[3.75rem] lg:grid-cols-[142px_752px_1fr] lg:pt-0 lg:max-w-7xl lg:after:absolute lg:after:inset-0 lg:after:left-[calc(50%+630px)] lg:after:bg-gray-50 lg:after:content-['']">
+      <!-- Logo Section -->
+      <div class="px-10 py-6 md:py-0 md:row-[1] md:float-left lg:pt-16 lg:row-span-3 lg:col-start-1 lg:row-start-1">
+        <img alt="SLSL Logo" loading="lazy" width="60" height="40" decoding="async" style="color:transparent"
+          src="/images/scsl308.webp">
       </div>
-      <div class="flex">
-        <nuxt-link to="https://github.com/younoch" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-          class="transition-all duration-150 ease-in-out text-gray-500 p-2 rounded-full no-underline hover:text-gray-900">
-          <span class="sr-only">GitHub</span>
-          <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 block align-middle">
-            <path fill-rule="evenodd"
-              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </nuxt-link>
-        <nuxt-link to="https://www.linkedin.com/in/younoch/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-          class="transition-all duration-150 ease-in-out text-gray-500 p-2 rounded-full ml-4 sm:ml-6 no-underline hover:text-gray-900">
-          <span class="sr-only">LinkedIn</span>
-          <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 block align-middle">
-            <path
-              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"></path>
-          </svg>
-        </nuxt-link>
-        <nuxt-link to="https://stackoverflow.com/users/14935206/younoch" target="_blank" rel="noopener noreferrer" aria-label="Stackoverflow"
-          class="transition-all duration-150 ease-in-out text-gray-500 p-2 rounded-full ml-4 sm:ml-6 no-underline hover:text-gray-900">
-          <span class="sr-only">Stackoverflow</span>
-            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 block align-middle">
-            <path
-              d="M17.5 20.5v-5h2v7h-15v-7h2v5h11zm-11.5-3h10v2h-10v-2zm1.2-3.8l.4-1.9 9.8 2.1-.4 1.9-9.8-2.1zm2.1-4.9l.9-1.7 8.5 4.5-.9 1.7-8.5-4.5zm3.3-4.5l1.4-1.4 6.4 6.4-1.4 1.4-6.4-6.4zm-5.4 12.2h10v2h-10v-2z"></path>
+
+      <!-- Main Links Section -->
+      <section
+        class="grid w-full grid-cols-1 px-10 md:grid-cols-3 md:pl-0 md:px-0 md:gap-4 md:grid-cols-[1fr_1fr_0.8fr] md:row-[1] md:col-span-2 lg:col-span-3 lg:row-span-3 lg:pt-16 lg:row-start-1 lg:col-start-2 lg:col-span-1">
+        <!-- Discover BairesDev -->
+        <div class="mb-8 md:max-w-[12.25rem]">
+          <ul>
+            <li class="text-xl font-bold mb-4 lg:mb-6">
+              <strong>Discover SLSL<span class="text-primary-600">.</span></strong>
+            </li>
+            <li class="text-sm mb-3 text-gray-900 hover:underline">
+              <a href="/about">About Us</a>
+            </li>
+            <!-- More list items... -->
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="mb-8 md:max-w-[12.25rem]">
+          <ul>
+            <li class="text-xl font-bold mb-4 lg:mb-6">
+              <strong>Resources<span class="text-primary-600">.</span></strong>
+            </li>
+            <li class="text-sm mb-3 text-gray-900 hover:underline">
+              <a href="/clients">Case Studies</a>
+            </li>
+            <!-- More list items... -->
+          </ul>
+        </div>
+
+        <!-- Careers -->
+        <div class="mb-8 md:max-w-[12.25rem]">
+          <ul>
+            <li class="text-xl font-bold mb-4 lg:mb-6">
+              <a href="/join-us">Careers<span class="text-primary-600">.</span></a>
+            </li>
+            <li class="text-sm mb-3 text-gray-900 hover:underline">
+              <a href="https://talent.bairesdev.com/">Job Opportunities</a>
+            </li>
+            <!-- More list items... -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Get in Touch Section -->
+      <section
+        class="w-full bg-gray-50 px-10 row-[5] md:row-start-4 md:col-span-2 lg:p-10 lg:col-span-3 lg:row-start-1 lg:pb-0 lg:pt-16 lg:pl-7 lg:pr-0 lg:col-span-1">
+        <p class="text-xl font-bold mb-6">Get in touch<span class="text-primary-600">.</span></p>
+        <div
+          class="float-left grid grid-cols-[auto,auto] gap-x-2 gap-y-5 md:[&_a:first-child]:col-start-2 [&_a:last-of-type]:col-start-1 [&_a:last-of-type]:row-start-1">
+          <a href="https://www.bairesdev.com/start/basic-details/"
+            class="w-fit flex items-center justify-center gap-2 px-4 rounded-lg bg-primary-600 hover:bg-primary-700 text-white py-3 text-xl font-medium col-span-2 md:col-span-1 h-11">
+            <span>Schedule a Call</span>
+            <svg class="transition-colors duration-300" width="20" height="20" viewBox="0 0 16 9" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <!-- SVG path... -->
             </svg>
-        </nuxt-link>
-      </div>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-8 sm:mt-12">
-      <div>
-        <h3 class="text-gray-900 font-semibold mb-3 sm:mb-4 text-base">
-          Navigation
-        </h3>
-        <ul class="list-none space-y-2 sm:space-y-0">
+          </a>
+          <!-- More buttons... -->
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section
+        class="bg-gray-50 p-10 pb-8 w-full md:row-start-3 md:col-span-2 lg:col-span-1 lg:row-start-4 lg:py-14 lg:pl-7 lg:w-full">
+        <p class="font-bold max-w-sm text-base mb-4">Get insights from the experts on building and scaling technology
+          teams.</p>
+        <!-- Newsletter form... -->
+      </section>
+
+      <!-- Social Media Section -->
+      <section
+        class="bg-gray-50 p-10 w-full md:row-start-5 md:col-span-2 lg:px-10 lg:pb-10 lg:pt-0 lg:col-span-4 lg:row-start-3 lg:row-span-2 lg:col-span-1 lg:pl-7 lg:pl-10">
+        <p class="text-xl mb-4 font-bold">Follow us<span class="text-primary-600">.</span></p>
+        <ul class="flex gap-4">
           <li>
-            <nuxt-link to="/" class="text-gray-500 no-underline hover:text-gray-900">Home</nuxt-link>
+            <a aria-label="Linkedin" href="https://www.linkedin.com/company/bairesdev"
+              class="flex h-8 w-8 items-center justify-center transition-all duration-500">
+              <svg class="h-4 w-4 lg:h-6 lg:w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- SVG path... -->
+              </svg>
+            </a>
           </li>
-          <li class="sm:my-2">
-            <nuxt-link to="/projects" class="text-gray-500 no-underline hover:text-gray-900">Projects</nuxt-link>
-          </li>
-          <li class="sm:my-2">
-            <nuxt-link to="/about" class="text-gray-500 no-underline hover:text-gray-900">About</nuxt-link>
-          </li>
+          <!-- More social icons... -->
         </ul>
-      </div>
-      <div>
-        <h3 class="text-gray-900 font-semibold mb-3 sm:mb-4 text-base">
-          Technologies
-        </h3>
-        <!-- <ul class="list-none space-y-2 sm:space-y-0">
-          <li>
-            <span class="text-gray-500">React</span>
-          </li>
-          <li class="sm:my-2">
-            <span class="text-gray-500">Tailwind CSS</span>
-          </li>
-          <li class="sm:my-2">
-            <span class="text-gray-500">JavaScript</span>
-          </li>
-          <li class="sm:my-2">
-            <span class="text-gray-500">GitHub API</span>
-          </li>
-        </ul> -->
-      </div>
-      <div class="sm:col-span-2">
-        <h3 class="text-gray-900 font-semibold mb-3 sm:mb-4 text-base">
-          About This Site
-        </h3>
-        <!-- <p class="text-gray-500">
-          This portfolio website is built with React and uses GitHub
-          Issues as a CMS. Content is dynamically fetched from GitHub
-          repository issues with specific labels.
-        </p> -->
-      </div>
+      </section>
+
+      <!-- Footer Links -->
+      <section
+        class="flex flex-col row-start-3 p-10 pt-2 md:row-start-2 md:col-start-2 md:p-0 md:px-0 lg:row-start-4 lg:col-start-2 lg:col-span-1">
+        <div class="text-xs mb-6">
+          <a href="https://www.bairesdev.com/privacy-policy/" class="hover:underline">Privacy Policy</a>
+          <span class="mx-2">|</span>
+          <a href="https://www.bairesdev.com/terms-conditions/" class="hover:underline">Terms of Service</a>
+          <span class="mx-2">|</span>
+          <a href="https://www.bairesdev.com/do-not-sell-my-personal-information/" class="hover:underline">Do Not Sell
+            My Personal Information</a>
+        </div>
+        <div class="mb-8 md:mb-6 lg:mb-16 text-xs">
+          <p>SLSL 2009 - 2025. All rights reserved.</p>
+        </div>
+      </section>
     </div>
-  </div>
-</footer>
+  </footer>
 </template>
 
 <script setup lang="ts">

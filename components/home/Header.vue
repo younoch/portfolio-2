@@ -7,7 +7,7 @@
       <nav class="px-1 flex justify-between items-center  ">
         <!-- Logo -->
         <nuxt-link to="/" class="text-cyan-800 font-bold text-lg md:text-2xl leading-8 relative no-underline   justify-self-center">
-          <img src="https://scsl.scsl.ltd/global/images/scsl308.webp" alt="Company Logo" class="h-8 md:h-12" />
+          <img src="/images/scsl308.webp" alt="Company Logo" class="h-8 md:h-12" />
         </nuxt-link>
 
         <!-- Desktop Navigation -->

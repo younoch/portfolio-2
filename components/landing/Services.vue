@@ -65,19 +65,19 @@ const services = [
   {
     title: 'SAP Services',
     description: 'Expert SAP advisory, implementation, migration, custom development, and Application maintenance service ensure seamless integration, boosting your business efficiency and success',
-    image: 'https://scsl.scsl.ltd/global/images/1.png',
+    image: '/images/1.png',
     link: '#'
   },
   {
     title: 'IT Staff Augmentation ',
     description: 'Access skilled IT professionals on demand through our IT staff augmentation service. Whether for projects and continuous support, we help business to scale up their team with the skills they need.',
-    image: 'https://scsl.scsl.ltd/global/images/21-83c79cbd.png',
+    image: '/images/21-83c79cbd.png',
     link: '#'
   },
   {
     title: 'Others Services',
     description: 'Our Other Services are Development Services, Managed services, AI & ML, Cyber Security, Training, Cloud Services, CAD Services, GIS Services',
-    image: '	https://scsl.scsl.ltd/global/images/4289960-02f4311f.png',
+    image: '	/images/4289960-02f4311f.png',
     link: '#'
   },
 ];

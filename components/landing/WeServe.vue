@@ -5,7 +5,7 @@
         Industry We Serve
       </h2>
       <img
-        src="https://scsl.scsl.ltd/global/images/Government.png"
+        src="/images/Government.png"
         alt="Industry We Serve"
         class="text-[#111111] pointer-events-auto overflow-hidden object-cover block align-middle bg-cover bg-center bg-no-repeat relative"
       />

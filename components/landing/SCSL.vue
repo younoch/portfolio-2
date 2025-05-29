@@ -72,7 +72,7 @@
 
             <div class="flex justify-center">
               <img
-                src="https://scsl.scsl.ltd/global/images/iso.webp"
+                src="/images/iso.webp"
                 alt=""
                 data-image-width="120"
                 data-image-height="120"
@@ -97,22 +97,22 @@
 <script setup lang="ts">
 const stats = reactive([
   {
-    icon: "https://scsl.scsl.ltd/global/images/10733362-0dac3d7f.png",
+    icon: "/images/10733362-0dac3d7f.png",
     value: "27+",
     label: "Years Of Experience",
   },
   {
-    icon: "https://scsl.scsl.ltd/global/images/1322236-25cb8d07.png",
+    icon: "/images/1322236-25cb8d07.png",
     value: "160+",
     label: "Satisfied Customer",
   },
   {
-    icon: "https://scsl.scsl.ltd/global/images/78948-a2607a33.png",
+    icon: "/images/78948-a2607a33.png",
     value: "110+",
     label: "Full Time Technical Resources",
   },
   {
-    icon: "https://scsl.scsl.ltd/global/images/3468821-723fa01e.png",
+    icon: "/images/3468821-723fa01e.png",
     value: "24/7",
     label: "Support Service",
   },
